@@ -1,0 +1,108 @@
+/* .sidebar{
+    width: 18%;
+    min-height: 100vh;
+    border: 1.5px solid #a9a9a9;
+    border-top: 0;
+    font-size: max(1vw,10px);
+}
+.sidebar-options{
+    padding-top: 50px;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.sidebar-option{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #a9a9a9;
+    border-right: 0px;
+    border-radius: 3px 0px 0px 3px;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+.sidebar-option.active{
+  background-color: #fff0ed;
+  border-color: tomato;
+}
+@media (max-width:900px){
+    .sidebar-option p{
+        display: none;
+    }
+} */.sidebar {
+    width: 18%;
+    min-height: 100vh;
+    border: 1.5px solid #a9a9a9;
+    border-top: 0;
+    font-size: max(1vw, 10px);
+    background: linear-gradient(135deg, #f7f7f7, #e6e6e6);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar:hover {
+    width: 20%;
+}
+
+.sidebar-options {
+    padding-top: 50px;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #a9a9a9;
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+    padding: 8px 10px;
+    background: linear-gradient(135deg, #ffffff, #f7f7f7);
+    transition: background 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.sidebar-option:hover {
+    background: linear-gradient(135deg, #fff0ed, #ffebea);
+    border-color: tomato;
+    transform: translateX(5px);
+}
+
+.sidebar-option.active {
+    background-color: #fff0ed;
+    border-color: tomato;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-option.active:hover {
+    transform: translateX(0);
+}
+
+.sidebar-option img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s;
+}
+
+.sidebar-option:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        width: 50px;
+    }
+
+    .sidebar-option p {
+        display: none;
+    }
+
+    .sidebar:hover {
+        width: 70px;
+    }
+}
